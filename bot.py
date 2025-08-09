@@ -18,7 +18,7 @@ class TradeBot:
         try:
             # Check the order type and places order.
             if type == "MARKET":
-                 self.client.futures_create_order(
+                 return self.client.futures_create_order(
                     symbol=symbol,
                     side=side,
                     type=type,
